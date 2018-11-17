@@ -1,0 +1,409 @@
+// body
+
+
+%tool_Button_body!
+<button type="button"></button>
+!tool_Button_body%
+
+%tool_Slider_body!
+<div class="slider" data-slider="data-slider"></div>
+!tool_Slider_body%
+
+%tool_SliderHandle_body!
+<span class="slider-handle" data-slider-handle="data-slider-handle" role="slider"></span>
+!tool_SliderHandle_body%
+
+%tool_SliderFill_body!
+<span class="slider-fill" data-slider-fill="data-slider-fill"></span>
+!tool_SliderFill_body%
+
+%tool_Switch_body!
+<div class="switch">
+	<input class="switch-input">
+	<label class="switch-paddle"></label>
+</div>
+!tool_Switch_body%
+
+%tool_SwitchActive_body!
+<span class="switch-active"></span>
+!tool_SwitchActive_body%
+
+%tool_SwitchInactive_body!
+<span class="switch-inactive"></span>
+!tool_SwitchInactive_body%
+
+%tool_DropdownMenu_body!
+<ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu"></ul>
+!tool_DropdownMenu_body%
+
+%tool_Pagination_body!
+<ul class="pagination" role="navigation"></ul>
+!tool_Pagination_body%
+
+%tool_Accordion_body!
+<ul class="accordion" data-accordion="data-accordion"></ul>
+!tool_Accordion_body%
+
+%tool_AccordionItem_body!
+<li class="accordion-item" data-accordion-item="data-accordion-item"></li>
+!tool_AccordionItem_body%
+
+%tool_Dropdown_body!
+<div class="dropdown-pane" data-dropdown="data-dropdown"></div>
+!tool_Dropdown_body%
+
+%tool_OffCanvas_body!
+<div class="off-canvas" data-off-canvas="data-off-canvas"></div>
+!tool_OffCanvas_body%
+
+%tool_OffCanvasContent_body!
+<div class="off-canvas-content" data-off-canvas-content="data-off-canvas-content"></div>
+!tool_OffCanvasContent_body%
+
+%tool_Reveal_body!
+<div class="reveal" data-reveal="data-reveal"></div>
+!tool_Reveal_body%
+
+%tool_Tabs_body!
+<ul class="tabs" data-tabs="data-tabs">
+!tool_Tabs_body%
+
+%tool_AccordionContent_body!
+<div class="accordion-content" data-tab-content="data-tab-content"></div>
+!tool_AccordionContent_body%
+
+%tool_Orbit_body!
+<div class="orbit" role="region" data-orbit="data-orbit"></div>
+!tool_Orbit_body%
+
+%tool_ProgressBar_body!
+<div class="progress" role="progressbar"></div>
+!tool_ProgressBar_body%
+
+
+// tools
+
+
+%tool_Row!
+aaa-%par1%
+!tool_Row%
+
+%tool_Row2!
+<span data-mbcode_id="%mbcode_id%">bbb-%par1%</span>
+!tool_Row2%
+
+
+
+%tool_ButtonGroup!
+<div class="button-group" data-mbcode_id="%mbcode_id%">
+    <a class="button">One</a>
+    <a class="button">Two</a>
+    <a class="button">Three</a>
+</div>
+!tool_ButtonGroup%
+
+%tool_Slider!
+<div class="slider" data-slider data-initial-start="50" data-end="200" data-mbcode_id="%mbcode_id%">
+    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+    <input type="hidden">
+</div>
+!tool_Slider%
+
+%tool_Switch!
+<div class="switch" data-mbcode_id="%mbcode_id%">
+    <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch" />
+    <label class="switch-paddle" for="exampleSwitch">
+        <span class="show-for-sr">Download Kittens</span>
+    </label>
+</div>
+!tool_Switch%
+
+%tool_Menu!
+<ul class="menu" data-mbcode_id="%mbcode_id%">
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    <li><a href="#">Three</a></li>
+    <li><a href="#">Four</a></li>
+</ul>
+!tool_Menu%
+
+%tool_DropdownMenu!
+<ul class="dropdown menu" data-dropdown-menu data-mbcode_id="%mbcode_id%">
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li><a href="#">Item 4</a></li>
+</ul>
+!tool_DropdownMenu%
+
+%tool_DrilldownMenu!
+<ul class="vertical menu drilldown" data-drilldown data-mbcode_id="%mbcode_id%">
+    <li><a href="#">One</a></li>
+    <li>
+        <a href="#">Two</a>
+        <ul class="menu vertical nested">
+            <li><a href="#">Two A</a></li>
+            <li><a href="#">Two B</a></li>
+            <li><a href="#">Two C</a></li>
+            <li><a href="#">Two D</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Three</a></li>
+    <li><a href="#">Four</a></li>
+</ul>
+!tool_DrilldownMenu%
+
+%tool_AccordionMenu!
+<ul class="vertical menu accordion-menu" data-accordion-menu data-mbcode_id="%mbcode_id%">
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu vertical nested">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1B</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Item 2</a></li>
+</ul>
+!tool_AccordionMenu%
+
+%tool_TopBar!
+<div class="top-bar" data-mbcode_id="%mbcode_id%">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Site Title</li>
+            <li>
+                <a href="#">One</a>
+                <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+        </ul>
+    </div>
+</div>
+!tool_TopBar%
+
+%tool_Menu_2!
+<ul class="vertical medium-horizontal menu" data-mbcode_id="%mbcode_id%">
+    <li><a href="#0"><i class="fi-list"></i> <span>One</span></a></li>
+    <li><a href="#0"><i class="fi-list"></i> <span>Two</span></a></li>
+    <li><a href="#0"><i class="fi-list"></i> <span>Three</span></a></li>
+    <li><a href="#0"><i class="fi-list"></i> <span>Four</span></a></li>
+</ul>
+!tool_Menu_2%
+
+%tool_Menu_3!
+<ul class="menu expanded" data-magellan data-mbcode_id="%mbcode_id%">
+    <li><a href="#first">First Arrival</a></li>
+    <li><a href="#second">Second Arrival</a></li>
+    <li><a href="#third">Third Arrival</a></li>
+</ul>
+!tool_Menu_3%
+
+%tool_Sections!
+<div class="sections" data-mbcode_id="%mbcode_id%">
+    <section id="first" data-magellan-target="first">First Section</section>
+    <section id="second" data-magellan-target="second">Second Section</section>
+    <section id="third" data-magellan-target="third">Third Section</section>
+</div>
+!tool_Sections%
+
+%tool_Pagination!
+<nav aria-label="Pagination" data-mbcode_id="%mbcode_id%">
+    <ul class="pagination">
+        <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis" aria-hidden="true"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+    </ul>
+</nav>
+!tool_Pagination%
+
+%tool_Breadcrumbs!
+<nav aria-label="You are here:" role="navigation" data-mbcode_id="%mbcode_id%">
+    <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li class="disabled">Gene Splicing</li>
+        <li>
+            <span class="show-for-sr">Current: </span> Cloning
+        </li>
+    </ul>
+</nav>
+!tool_Breadcrumbs%
+
+%tool_Accordion!
+<ul class="accordion" data-accordion data-mbcode_id="%mbcode_id%">
+    <li class="accordion-item is-active" data-accordion-item>
+        <!-- Accordion tab title -->
+        <a href="#" class="accordion-title">Accordion 1</a>
+        
+        <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+        <div class="accordion-content" data-tab-content>
+            <p>Panel 1. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+        </div>
+    </li>
+    <!-- ... -->
+</ul>
+!tool_Accordion%
+
+%tool_Card!
+<div class="card" style="width: 300px;" data-mbcode_id="%mbcode_id%">
+    <div class="card-divider">
+        This is a header
+    </div>
+    <img src="assets/img/generic/rectangle-1.jpg">
+        <div class="card-section">
+            <h4>This is a card.</h4>
+            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+</div>
+!tool_Card%
+
+%tool_MediaObject!
+<div class="media-object" data-mbcode_id="%mbcode_id%">
+    <div class="media-object-section">
+        <div class="thumbnail">
+            <img src="assets/img/media-object/avatar-1.jpg" />
+        </div>
+    </div>
+    <div class="media-object-section">
+        <h4>Dreams feel real while we're in them.</h4>
+        <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+    </div>
+</div>
+!tool_MediaObject%
+
+%tool_Reveal!
+<div class="reveal" id="exampleModal1" data-reveal data-mbcode_id="%mbcode_id%">
+    <h1>Awesome. I Have It.</h1>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+!tool_Reveal%
+
+%tool_Table!
+<table data-mbcode_id="%mbcode_id%">
+    <thead>
+        <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+        </tr>
+        <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+        </tr>
+        <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+        </tr>
+    </tbody>
+</table>
+!tool_Table%
+
+%tool_Tabs!
+<ul class="tabs" data-tabs id="example-tabs" data-mbcode_id="%mbcode_id%">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+</ul>
+!tool_Tabs%
+
+%tool_Accordion_2!
+<ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" data-mbcode_id="%mbcode_id%">
+    <li class="accordion-item is-active" data-accordion-item>
+        <a href="#" class="accordion-title">Accordion 1</a>
+        <div class="accordion-content" data-tab-content>
+            I would start in the open state, due to using the `is-active` state class.
+        </div>
+    </li>
+    <!-- ... -->
+</ul>
+!tool_Accordion_2%
+
+%tool_ResponsiveEmbed!
+<div class="responsive-embed" data-mbcode_id="%mbcode_id%">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4" frameborder="0" allowfullscreen></iframe>
+</div>
+!tool_ResponsiveEmbed%
+
+%tool_Orbit!
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-mbcode_id="%mbcode_id%">
+    <div class="orbit-wrapper">
+        <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        </div>
+        <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                        <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                        </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                        <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                        </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                        <figcaption class="orbit-caption">Encapsulating</figcaption>
+                        </figure>
+            </li>
+            <li class="orbit-slide">
+                <figure class="orbit-figure">
+                    <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                        <figcaption class="orbit-caption">Outta This World</figcaption>
+                        </figure>
+            </li>
+        </ul>
+    </div>
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+</div>
+!tool_Orbit%
+
+%tool_ProgressBar!
+<div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-mbcode_id="%mbcode_id%">
+    <div class="progress-meter"></div>
+</div>
+!tool_ProgressBar%

@@ -1,0 +1,476 @@
+// tools
+
+%tool_Button!
+123
+!tool_Button%
+
+
+%tool_Breadcrumb!
+<div class="ui breadcrumb" data-mbcode_id="%mbcode_id%">
+<a class="section">Home</a>
+<div class="divider"> / </div>
+<a class="section">Store</a>
+<div class="divider"> / </div>
+<div class="active section">T-Shirt</div>
+</div>
+!tool_Breadcrumb%
+
+%tool_Form!
+<form data-mbcode_id="%mbcode_id%" class="ui form">
+    <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+            </div>
+    <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+            </div>
+    <div class="field">
+        <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the Terms and Conditions</label>
+                </div>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+</form>
+!tool_Form%
+
+%tool_Grid!
+<div class="ui grid" data-mbcode_id="%mbcode_id%">
+    <div class="four wide column"></div>
+    <div class="four wide column"></div>
+    <div class="four wide column"></div>
+    <div class="four wide column"></div>
+</div>
+!tool_Grid%
+
+%tool_Menu!
+<div class="ui three item menu" data-mbcode_id="%mbcode_id%">
+    <a class="active item">Editorials</a>
+    <a class="item">Reviews</a>
+    <a class="item">Upcoming Events</a>
+</div>
+!tool_Menu%
+
+%tool_Message!
+<div class="ui message" data-mbcode_id="%mbcode_id%">
+    <div class="header">
+        Changes in Service
+    </div>
+    <p>We just updated our privacy policy here to better service our customers. We recommend reviewing the changes.</p>
+</div>
+!tool_Message%
+
+%tool_Table!
+<table class="ui celled table" data-mbcode_id="%mbcode_id%">
+    <thead>
+        <tr><th>Name</th>
+            <th>Age</th>
+            <th>Job</th>
+        </tr></thead>
+    <tbody>
+        <tr>
+            <td data-label="Name">James</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Engineer</td>
+        </tr>
+        <tr>
+            <td data-label="Name">Jill</td>
+            <td data-label="Age">26</td>
+            <td data-label="Job">Engineer</td>
+        </tr>
+        <tr>
+            <td data-label="Name">Elyse</td>
+            <td data-label="Age">24</td>
+            <td data-label="Job">Designer</td>
+        </tr>
+    </tbody>
+</table>
+!tool_Table%
+
+%tool_Card!
+<div class="ui card" data-mbcode_id="%mbcode_id%">
+    <div class="image">
+        <img src="/images/avatar2/large/kristy.png">
+            </div>
+    <div class="content">
+        <a class="header">Kristy</a>
+        <div class="meta">
+            <span class="date">Joined in 2013</span>
+        </div>
+        <div class="description">
+            Kristy is an art director living in New York.
+        </div>
+    </div>
+    <div class="extra content">
+        <a>
+            <i class="user icon"></i>
+            22 Friends
+        </a>
+    </div>
+</div>
+!tool_Card%
+
+%tool_Comment!
+<div class="comment" data-mbcode_id="%mbcode_id%">
+    <a class="avatar">
+        <img src="/images/avatar/small/matt.jpg">
+            </a>
+    <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+            <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+            How artistic!
+        </div>
+        <div class="actions">
+            <a class="reply">Reply</a>
+        </div>
+    </div>
+</div>
+!tool_Comment%
+
+%tool_Feed!
+<div class="ui feed" data-mbcode_id="%mbcode_id%">
+    <div class="event">
+        <div class="label">
+            <img src="/images/avatar/small/elliot.jpg">
+                </div>
+        <div class="content">
+            <div class="summary">
+                <a class="user">
+                    Elliot Fu
+                </a> added you as a friend
+                <div class="date">
+                    1 Hour Ago
+                </div>
+            </div>
+            <div class="meta">
+                <a class="like">
+                    <i class="like icon"></i> 4 Likes
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="label">
+            <img src="/images/avatar/small/helen.jpg">
+                </div>
+        <div class="content">
+            <div class="summary">
+                <a>Helen Troy</a> added <a>2 new illustrations</a>
+                <div class="date">
+                    4 days ago
+                </div>
+            </div>
+            <div class="extra images">
+                <a><img src="/images/wireframe/image.png"></a>
+                <a><img src="/images/wireframe/image.png"></a>
+            </div>
+            <div class="meta">
+                <a class="like">
+                    <i class="like icon"></i> 1 Like
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="label">
+            <img src="/images/avatar/small/jenny.jpg">
+                </div>
+        <div class="content">
+            <div class="summary">
+                <a class="user">
+                    Jenny Hess
+                </a> added you as a friend
+                <div class="date">
+                    2 Days Ago
+                </div>
+            </div>
+            <div class="meta">
+                <a class="like">
+                    <i class="like icon"></i> 8 Likes
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="label">
+            <img src="/images/avatar/small/joe.jpg">
+                </div>
+        <div class="content">
+            <div class="summary">
+                <a>Joe Henderson</a> posted on his page
+                <div class="date">
+                    3 days ago
+                </div>
+            </div>
+            <div class="extra text">
+                Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+            </div>
+            <div class="meta">
+                <a class="like">
+                    <i class="like icon"></i> 5 Likes
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="event">
+        <div class="label">
+            <img src="/images/avatar/small/justen.jpg">
+                </div>
+        <div class="content">
+            <div class="summary">
+                <a>Justen Kitsune</a> added <a>2 new photos</a> of you
+                <div class="date">
+                    4 days ago
+                </div>
+            </div>
+            <div class="extra images">
+                <a><img src="/images/wireframe/image.png"></a>
+                <a><img src="/images/wireframe/image.png"></a>
+            </div>
+            <div class="meta">
+                <a class="like">
+                    <i class="like icon"></i> 41 Likes
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+!tool_Feed%
+
+%tool_Item!
+<div class="item" data-mbcode_id="%mbcode_id%">
+    <div class="image">
+        <img src="/images/wireframe/image.png">
+            </div>
+    <div class="content">
+        <a class="header">Header</a>
+        <div class="meta">
+            <span>Description</span>
+        </div>
+        <div class="description">
+            <p></p>
+        </div>
+        <div class="extra">
+            Additional Details
+        </div>
+    </div>
+</div>
+!tool_Item%
+
+%tool_Statistic!
+<div class="ui statistic" data-mbcode_id="%mbcode_id%">
+    <div class="value">
+        5,550
+    </div>
+    <div class="label">
+        Downloads
+    </div>
+</div>
+!tool_Statistic%
+
+%tool_Accordion!
+<div class="ui accordion" data-mbcode_id="%mbcode_id%">
+    <div class="active title">
+        <i class="dropdown icon"></i>
+        What is a dog?
+    </div>
+    <div class="active content">
+        <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+    </div>
+    <div class="title">
+        <i class="dropdown icon"></i>
+        What kinds of dogs are there?
+    </div>
+    <div class="content">
+        <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+    </div>
+    <div class="title">
+        <i class="dropdown icon"></i>
+        How do you acquire a dog?
+    </div>
+    <div class="content">
+        <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+        <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+    </div>
+</div>
+!tool_Accordion%
+
+%tool_Checkbox!
+<div class="ui checkbox" data-mbcode_id="%mbcode_id%">
+    <input type="checkbox" name="example" />
+    <label>Make my profile visible</label>
+</div>
+!tool_Checkbox%
+
+%tool_Dropdown!
+<div class="ui dropdown" data-mbcode_id="%mbcode_id%">
+    <div class="text">File</div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+        <div class="item">New</div>
+        <div class="item">
+            <span class="description">ctrl + o</span>
+            Open...
+        </div>
+        <div class="item">
+            <span class="description">ctrl + s</span>
+            Save as...
+        </div>
+        <div class="item">
+            <span class="description">ctrl + r</span>
+            Rename
+        </div>
+        <div class="item">Make a copy</div>
+        <div class="item">
+            <i class="folder icon"></i>
+            Move to folder
+        </div>
+        <div class="item">
+            <i class="trash icon"></i>
+            Move to trash
+        </div>
+        <div class="divider"></div>
+        <div class="item">Download As...</div>
+        <div class="item">
+            <i class="dropdown icon"></i>
+            Publish To Web
+            <div class="menu">
+                <div class="item">Google Docs</div>
+                <div class="item">Google Drive</div>
+                <div class="item">Dropbox</div>
+                <div class="item">Adobe Creative Cloud</div>
+                <div class="item">Private FTP</div>
+                <div class="item">Another Service...</div>
+            </div>
+        </div>
+        <div class="item">E-mail Collaborators</div>
+    </div>
+</div>
+!tool_Dropdown%
+
+%tool_Modal!
+<div class="ui modal" data-mbcode_id="%mbcode_id%">
+    <i class="close icon"></i>
+    <div class="header">
+        Profile Picture
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="/images/avatar/large/chris.jpg">
+                </div>
+        <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+            Yep, that's me
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+!tool_Modal%
+
+%tool_Progress!
+<div class="ui progress" data-mbcode_id="%mbcode_id%">
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+    <div class="label">Uploading Files</div>
+</div>
+!tool_Progress%
+
+%tool_Search!
+<div class="ui search" data-mbcode_id="%mbcode_id%">
+    <input class="prompt" type="text" placeholder="Common passwords...">
+        <div class="results"></div>
+</div>
+!tool_Search%
+
+%tool_Shape!
+<div class="ui cube shape" data-mbcode_id="%mbcode_id%">
+    <div class="sides">
+        <div class="side">
+            <div class="content">
+                <div class="center">
+                    1
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="content">
+                <div class="center">
+                    2
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="content">
+                <div class="center">
+                    3
+                </div>
+            </div>
+        </div>
+        <div class="side active">
+            <div class="content">
+                <div class="center">
+                    4
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="content">
+                <div class="center">
+                    5
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="content">
+                <div class="center">
+                    6
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+!tool_Shape%
+
+%tool_Sidebar!
+<div class="ui sidebar inverted vertical menu" data-mbcode_id="%mbcode_id%">
+    <a class="item">
+        1
+    </a>
+    <a class="item">
+        2
+    </a>
+    <a class="item">
+        3
+    </a>
+</div>
+<div class="pusher">
+    <!-- Site content !-->
+</div>
+!tool_Sidebar%
+
+%tool_Sticky!
+<div class="ui sticky" data-mbcode_id="%mbcode_id%">
+    <h3 class="ui header">Stuck Content</h3>
+    <img />
+        </div>
+!tool_Sticky%
+
+%tool_Menu_2!
+<div class="ui top attached tabular menu" data-mbcode_id="%mbcode_id%">
+    <div class="item">Tab</div>
+</div>
+!tool_Menu_2%

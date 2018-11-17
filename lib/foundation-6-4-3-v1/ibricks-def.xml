@@ -1,0 +1,2373 @@
+<ibricks lib="foundation-6.4.3" ver="1.2" baseLib="html-5" ibricks_ver="2">
+	
+	<set>
+		
+		<!-- brick -->
+		<brick name="Row">
+			<mark>
+				<tag>div</tag>
+				<class>row</class>
+			</mark>
+			<rules>
+				<inside>Column, ColumnRow</inside>
+			</rules>
+			<properties>
+				<prop name="expanded" type="class-set">
+					<option value=""></option>
+					<option value="expanded"></option>
+				</prop>
+				<prop name="collapse" type="class-set">
+					<option value=""></option>
+					<option value="collapse"></option>
+				</prop>
+				<prop name="is-collapse-child" type="class-set">
+					<option value=""></option>
+					<option value="is-collapse-child"></option>
+				</prop>
+				<prop name="SmallCollapse" type="class-set">
+					<option value=""></option>
+					<option value="small-collapse"></option>
+					<option value="small-uncollapse"></option>
+				</prop>
+				<prop name="MediumCollapse" type="class-set">
+					<option value=""></option>
+					<option value="medium-collapse"></option>
+					<option value="medium-uncollapse"></option>
+				</prop>
+				<prop name="LargeCollapse" type="class-set">
+					<option value=""></option>
+					<option value="large-collapse"></option>
+					<option value="large-uncollapse"></option>
+				</prop>
+				<prop name="SmallUp" type="class-set">
+					<option value=""></option>
+					<option value="small-up-1"></option>
+					<option value="small-up-2"></option>
+					<option value="small-up-3"></option>
+					<option value="small-up-4"></option>
+					<option value="small-up-5"></option>
+					<option value="small-up-6"></option>
+					<option value="small-up-7"></option>
+					<option value="small-up-8"></option>
+					<option value="small-up-9"></option>
+					<option value="small-up-10"></option>
+					<option value="small-up-11"></option>
+					<option value="small-up-12"></option>
+				</prop>
+				<prop name="MediumUp" type="class-set">
+					<option value=""></option>
+					<option value="medium-up-1"></option>
+					<option value="medium-up-2"></option>
+					<option value="medium-up-3"></option>
+					<option value="medium-up-4"></option>
+					<option value="medium-up-5"></option>
+					<option value="medium-up-6"></option>
+					<option value="medium-up-7"></option>
+					<option value="medium-up-8"></option>
+					<option value="medium-up-9"></option>
+					<option value="medium-up-10"></option>
+					<option value="medium-up-11"></option>
+					<option value="medium-up-12"></option>
+				</prop>
+				<prop name="LargeUp" type="class-set">
+					<option value=""></option>
+					<option value="large-up-1"></option>
+					<option value="large-up-2"></option>
+					<option value="large-up-3"></option>
+					<option value="large-up-4"></option>
+					<option value="large-up-5"></option>
+					<option value="large-up-6"></option>
+					<option value="large-up-7"></option>
+					<option value="large-up-8"></option>
+					<option value="large-up-9"></option>
+					<option value="large-up-10"></option>
+					<option value="large-up-11"></option>
+					<option value="large-up-12"></option>
+				</prop>
+				<prop name="small-unstack" type="class-set">
+					<option value=""></option>
+					<option value="small-unstack"></option>
+				</prop>
+				<prop name="medium-unstack" type="class-set">
+					<option value=""></option>
+					<option value="medium-unstack"></option>
+				</prop>
+				<prop name="large-unstack" type="class-set">
+					<option value=""></option>
+					<option value="large-unstack"></option>
+				</prop>
+				<prop name="Align" type="class-set">
+					<option value=""></option>
+					<option value="align-center"></option>
+					<option value="align-right"></option>
+					<option value="align-justify"></option>
+					<option value="align-spaced"></option>
+				</prop>
+				<prop name="AlignVertical" type="class-set">
+					<option value=""></option>
+					<option value="align-top"></option>
+					<option value="align-middle"></option>
+					<option value="align-bottom"></option>
+					<option value="align-stretch"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Column">
+			<mark>
+				<tag>div, fieldset</tag>
+				<class>column, columns</class>
+			</mark>
+			<rules>
+				<before>Column</before>
+				<after>Column</after>
+				<position>Row:*, ColumnRow:*</position>
+			</rules>
+			<properties>
+				<prop name="AlignSelf" type="class-set">
+					<option value=""></option>
+					<option value="align-self-top"></option>
+					<option value="align-self-middle"></option>
+					<option value="align-self-bottom"></option>
+					<option value="align-self-stretch"></option>
+				</prop>
+				<prop name="Small" type="class-set">
+					<option value=""></option>
+					<option value="small-1"></option>
+					<option value="small-2"></option>
+					<option value="small-3"></option>
+					<option value="small-4"></option>
+					<option value="small-5"></option>
+					<option value="small-6"></option>
+					<option value="small-7"></option>
+					<option value="small-8"></option>
+					<option value="small-9"></option>
+					<option value="small-10"></option>
+					<option value="small-11"></option>
+					<option value="small-12"></option>
+				</prop>
+				<prop name="Medium" type="class-set">
+					<option value=""></option>
+					<option value="medium-1"></option>
+					<option value="medium-2"></option>
+					<option value="medium-3"></option>
+					<option value="medium-4"></option>
+					<option value="medium-5"></option>
+					<option value="medium-6"></option>
+					<option value="medium-7"></option>
+					<option value="medium-8"></option>
+					<option value="medium-9"></option>
+					<option value="medium-10"></option>
+					<option value="medium-11"></option>
+					<option value="medium-12"></option>
+				</prop>
+				<prop name="Large" type="class-set">
+					<option value=""></option>
+					<option value="large-1"></option>
+					<option value="large-2"></option>
+					<option value="large-3"></option>
+					<option value="large-4"></option>
+					<option value="large-5"></option>
+					<option value="large-6"></option>
+					<option value="large-7"></option>
+					<option value="large-8"></option>
+					<option value="large-9"></option>
+					<option value="large-10"></option>
+					<option value="large-11"></option>
+					<option value="large-12"></option>
+				</prop>
+				<prop name="SmallOffset" type="class-set">
+					<option value=""></option>
+					<option value="small-offset-1"></option>
+					<option value="small-offset-2"></option>
+					<option value="small-offset-3"></option>
+					<option value="small-offset-4"></option>
+					<option value="small-offset-5"></option>
+					<option value="small-offset-6"></option>
+					<option value="small-offset-7"></option>
+					<option value="small-offset-8"></option>
+					<option value="small-offset-9"></option>
+					<option value="small-offset-10"></option>
+					<option value="small-offset-11"></option>
+					<option value="small-offset-12"></option>
+				</prop>
+				<prop name="MediumOffset" type="class-set">
+					<option value=""></option>
+					<option value="medium-offset-1"></option>
+					<option value="medium-offset-2"></option>
+					<option value="medium-offset-3"></option>
+					<option value="medium-offset-4"></option>
+					<option value="medium-offset-5"></option>
+					<option value="medium-offset-6"></option>
+					<option value="medium-offset-7"></option>
+					<option value="medium-offset-8"></option>
+					<option value="medium-offset-9"></option>
+					<option value="medium-offset-10"></option>
+					<option value="medium-offset-11"></option>
+					<option value="medium-offset-12"></option>
+				</prop>
+				<prop name="LargeOffset" type="class-set">
+					<option value=""></option>
+					<option value="large-offset-1"></option>
+					<option value="large-offset-2"></option>
+					<option value="large-offset-3"></option>
+					<option value="large-offset-4"></option>
+					<option value="large-offset-5"></option>
+					<option value="large-offset-6"></option>
+					<option value="large-offset-7"></option>
+					<option value="large-offset-8"></option>
+					<option value="large-offset-9"></option>
+					<option value="large-offset-10"></option>
+					<option value="large-offset-11"></option>
+					<option value="large-offset-12"></option>
+				</prop>
+				<prop name="end" type="class-set">
+					<option value=""></option>
+					<option value="end"></option>
+				</prop>
+				<prop name="small-centered" type="class-set">
+					<option value=""></option>
+					<option value="small-centered"></option>
+				</prop>
+				<prop name="large-centered" type="class-set">
+					<option value=""></option>
+					<option value="large-centered"></option>
+				</prop>
+				<prop name="large-uncentered" type="class-set">
+					<option value=""></option>
+					<option value="large-uncentered"></option>
+				</prop>
+				<prop name="SmallPush" type="class-set">
+					<option value=""></option>
+					<option value="small-push-1"></option>
+					<option value="small-push-2"></option>
+					<option value="small-push-3"></option>
+					<option value="small-push-4"></option>
+					<option value="small-push-5"></option>
+					<option value="small-push-6"></option>
+					<option value="small-push-7"></option>
+					<option value="small-push-8"></option>
+					<option value="small-push-9"></option>
+					<option value="small-push-10"></option>
+					<option value="small-push-11"></option>
+					<option value="small-push-12"></option>
+				</prop>
+				<prop name="MediumPush" type="class-set">
+					<option value=""></option>
+					<option value="medium-push-1"></option>
+					<option value="medium-push-2"></option>
+					<option value="medium-push-3"></option>
+					<option value="medium-push-4"></option>
+					<option value="medium-push-5"></option>
+					<option value="medium-push-6"></option>
+					<option value="medium-push-7"></option>
+					<option value="medium-push-8"></option>
+					<option value="medium-push-9"></option>
+					<option value="medium-push-10"></option>
+					<option value="medium-push-11"></option>
+					<option value="medium-push-12"></option>
+				</prop>
+				<prop name="LargePush" type="class-set">
+					<option value=""></option>
+					<option value="large-push-1"></option>
+					<option value="large-push-2"></option>
+					<option value="large-push-3"></option>
+					<option value="large-push-4"></option>
+					<option value="large-push-5"></option>
+					<option value="large-push-6"></option>
+					<option value="large-push-7"></option>
+					<option value="large-push-8"></option>
+					<option value="large-push-9"></option>
+					<option value="large-push-10"></option>
+					<option value="large-push-11"></option>
+					<option value="large-push-12"></option>
+				</prop>
+				<prop name="SmallPull" type="class-set">
+					<option value=""></option>
+					<option value="small-pull-1"></option>
+					<option value="small-pull-2"></option>
+					<option value="small-pull-3"></option>
+					<option value="small-pull-4"></option>
+					<option value="small-pull-5"></option>
+					<option value="small-pull-6"></option>
+					<option value="small-pull-7"></option>
+					<option value="small-pull-8"></option>
+					<option value="small-pull-9"></option>
+					<option value="small-pull-10"></option>
+					<option value="small-pull-11"></option>
+					<option value="small-pull-12"></option>
+				</prop>
+				<prop name="MediumPull" type="class-set">
+					<option value=""></option>
+					<option value="medium-pull-1"></option>
+					<option value="medium-pull-2"></option>
+					<option value="medium-pull-3"></option>
+					<option value="medium-pull-4"></option>
+					<option value="medium-pull-5"></option>
+					<option value="medium-pull-6"></option>
+					<option value="medium-pull-7"></option>
+					<option value="medium-pull-8"></option>
+					<option value="medium-pull-9"></option>
+					<option value="medium-pull-10"></option>
+					<option value="medium-pull-11"></option>
+					<option value="medium-pull-12"></option>
+				</prop>
+				<prop name="LargePull" type="class-set">
+					<option value=""></option>
+					<option value="large-pull-1"></option>
+					<option value="large-pull-2"></option>
+					<option value="large-pull-3"></option>
+					<option value="large-pull-4"></option>
+					<option value="large-pull-5"></option>
+					<option value="large-pull-6"></option>
+					<option value="large-pull-7"></option>
+					<option value="large-pull-8"></option>
+					<option value="large-pull-9"></option>
+					<option value="large-pull-10"></option>
+					<option value="large-pull-11"></option>
+					<option value="large-pull-12"></option>
+				</prop>
+				<prop name="column-block" type="class-set">
+					<option value=""></option>
+					<option value="column-block"></option>
+				</prop>
+				<prop name="shrink" type="class-set">
+					<option value=""></option>
+					<option value="shrink"></option>
+				</prop>
+				<prop name="medium-expand" type="class-set">
+					<option value=""></option>
+					<option value="medium-expand"></option>
+				</prop>
+				<prop name="large-expand" type="class-set">
+					<option value=""></option>
+					<option value="large-expand"></option>
+				</prop>
+				<prop name="SmallOrder" type="class-set">
+					<option value=""></option>
+					<option value="small-order-1"></option>
+					<option value="small-order-2"></option>
+					<option value="small-order-3"></option>
+					<option value="small-order-4"></option>
+					<option value="small-order-5"></option>
+					<option value="small-order-6"></option>
+					<option value="small-order-7"></option>
+					<option value="small-order-8"></option>
+					<option value="small-order-9"></option>
+					<option value="small-order-10"></option>
+					<option value="small-order-11"></option>
+					<option value="small-order-12"></option>
+				</prop>
+				<prop name="MediumOrder" type="class-set">
+					<option value=""></option>
+					<option value="medium-order-1"></option>
+					<option value="medium-order-2"></option>
+					<option value="medium-order-3"></option>
+					<option value="medium-order-4"></option>
+					<option value="medium-order-5"></option>
+					<option value="medium-order-6"></option>
+					<option value="medium-order-7"></option>
+					<option value="medium-order-8"></option>
+					<option value="medium-order-9"></option>
+					<option value="medium-order-10"></option>
+					<option value="medium-order-11"></option>
+					<option value="medium-order-12"></option>
+				</prop>
+				<prop name="LargeOrder" type="class-set">
+					<option value=""></option>
+					<option value="large-order-1"></option>
+					<option value="large-order-2"></option>
+					<option value="large-order-3"></option>
+					<option value="large-order-4"></option>
+					<option value="large-order-5"></option>
+					<option value="large-order-6"></option>
+					<option value="large-order-7"></option>
+					<option value="large-order-8"></option>
+					<option value="large-order-9"></option>
+					<option value="large-order-10"></option>
+					<option value="large-order-11"></option>
+					<option value="large-order-12"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="ColumnRow">
+			<mark>
+				<tag>div, fieldset</tag>
+				<class>column, columns</class>
+				<class>row</class>
+			</mark>
+			<properties>
+				<!-- Column props -->
+				<!-- Row props -->
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Fieldset">
+			<mark>
+				<tag>fieldset</tag>
+				<class>fieldset</class>
+			</mark>
+			<rules>
+				<inside>legend, input</inside>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		 <!-- brick -->
+		<brick name="InputGroup">
+			<mark>
+				<tag>div</tag>
+				<class>input-group</class>
+			</mark>
+			<rules>
+				<inside>InputGroupLabel, InputGroupField, InputGroupButton</inside>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		 <!-- brick -->
+		<brick name="InputGroupLabel">
+			<mark>
+				<tag>span</tag>
+				<class>input-group-label</class>
+			</mark>
+			<rules>
+				<position>InputGroup:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		 <!-- brick -->
+		<brick name="InputGroupField">
+			<mark>
+				<tag>input</tag>
+				<class>input-group-field</class>
+			</mark>
+			<rules>
+				<inside></inside>
+				<position>InputGroup:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		 <!-- brick -->
+		<brick name="InputGroupButton">
+			<mark>
+				<tag>div</tag>
+				<class>input-group-button</class>
+			</mark>
+			<rules>
+				<inside>ButtonElement, LinkButton</inside>
+				<position>InputGroup:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		 
+		 
+		 <!-- brick -->
+		<brick name="Header">
+			<mark>
+				<tag>h1, h2, h3, h4, h5, h6</tag>
+			</mark>
+			<properties>
+				<prop name="subheader" type="class-set">
+					<option value=""></option>
+					<option value="subheader"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="P">
+			<mark>
+				<tag>p</tag>
+			</mark>
+			<properties>
+				<prop name="lead" type="class-set">
+					<option value=""></option>
+					<option value="lead"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Ul">
+			<mark>
+				<tag>ul</tag>
+			</mark>
+			<rules>
+				<inside>li</inside>
+			</rules>
+			<properties>
+				<prop name="no-bullet" type="class-set">
+					<option value=""></option>
+					<option value="no-bullet"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Li">
+			<mark>
+				<tag>li</tag>
+				<class>aa</class>
+			</mark>
+			<rules>
+				<inside>li</inside>
+			</rules>
+			<properties>
+				<prop name="no-bullet" type="class-set">
+					<option value=""></option>
+					<option value="no-bullet"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		
+		<!-- Controls -->
+		
+		
+		<!-- brick -->
+		<brick name="ButtonClass">
+			<mark>
+				<class>button</class>
+			</mark>
+			<properties>
+				<prop name="Size" type="class-set">
+					<option value=""></option>
+					<option value="tiny"></option>
+					<option value="small"></option>
+					<option value="large"></option>
+				</prop>
+				<prop name="expanded" type="class-set">
+					<option value=""></option>
+					<option value="expanded"></option>
+				</prop>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="primary"></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+				<prop name="hollow" type="class-set">
+					<option value=""></option>
+					<option value="hollow"></option>
+				</prop>
+				<prop name="dropdown" type="class-set">
+					<option value=""></option>
+					<option value="dropdown"></option>
+				</prop>
+				
+				<prop name="arrow-only" type="class-set">
+					<option value=""></option>
+					<option value="arrow-only"></option>
+				</prop>
+				<prop name="close-button" type="class-set">
+					<option value=""></option>
+					<option value="close-button"></option>
+				</prop>
+		 </properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="LinkButton">
+			<mark>
+				<tag>a</tag>
+				<class>button</class>
+			</mark>
+			<properties>
+				<prop name="disabled" type="class-set">
+				 <option value=""></option>
+					<option value="disabled"></option>
+				</prop>
+				<prop name="aria-disabled" type="attr-set">
+					<option value=""></option>
+					<option value="aria-disabled"></option>
+				</prop>
+		 </properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Button" reqBody="true">
+		 <mark>
+			 <tag>button</tag>
+			 <class>button</class>
+		 </mark>
+		 <properties>
+			 <prop name="disabled" type="attr-set">
+                <option value=""></option>
+                <option value="disabled"></option>
+			 </prop>
+		 </properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="ButtonGroup">
+			<mark>
+				<tag>div</tag>
+				<class>button-group</class>
+			</mark>
+			<properties>
+				<prop name="Size" type="class-set">
+					<option value=""></option>
+					<option value="tiny"></option>
+					<option value="small"></option>
+					<option value="large"></option>
+				</prop>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+				<prop name="expanded" type="class-set">
+					<option value=""></option>
+					<option value="expanded"></option>
+				</prop>
+				<prop name="Stacked" type="class-set">
+					<option value=""></option>
+					<option value="stacked"></option>
+					<option value="stacked-for-small"></option>
+					<option value="stacked-for-medium"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Buttons" label="" res="ButtonGroup"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Slider" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>slider</class>
+			</mark>
+			<rules>
+				<inside>SliderHandle, SliderFill, input</inside>
+			</rules>
+			<properties>
+				<prop name="data-initial-start" type="attr-any" subtype="number"></prop>
+				<prop name="data-initial-end" type="attr-any" subtype="number"></prop>
+				<prop name="data-start" type="attr-any" subtype="number"></prop>
+				<prop name="data-end" type="attr-any" subtype="number"></prop>
+				<prop name="vertical" type="class-set">
+					<option value=""></option>
+					<option value="vertical"></option>
+				</prop>
+				<prop name="data-vertical" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="disabled" type="class-set">
+					<option value=""></option>
+					<option value="disabled"></option>
+				</prop>
+				<prop name="data-step" type="attr-any" subtype="number"></prop>
+				<prop name="data-position-value-function" type="attr-set">
+					<option value=""></option>
+					<option value="log"></option>
+					<option value="pow"></option>
+				</prop>
+				<prop name="data-binding" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-click-select" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-draggable" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-disabled" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-double-sided" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-decimal" type="attr-any" subtype="number"></prop>
+				<prop name="data-move-time" type="attr-any" subtype="number"></prop>
+				<prop name="data-disabled-class" type="attr-any"></prop>
+				<prop name="data-invert-vertical" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-changed-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-non-linear-base" type="attr-any" subtype="number"></prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Slider"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="SliderHandle" reqBody="true">
+			<mark>
+				<class>slider-handle</class>
+			</mark>
+			<rules>
+				<inside></inside>
+				<position>Slider:*</position>
+			</rules>
+			<properties>
+				<prop name="tab-index" type="attr-any"></prop>
+				<prop name="aria-controls" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="SliderFill" reqBody="true">
+			<mark>
+				<class>slider-fill</class>
+			</mark>
+			<rules>
+				<inside></inside>
+				<position>Slider:*</position>
+			</rules>
+			<properties>
+				<prop name="tab-index" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="NativeRangeSlider">
+			<mark>
+				<tag>input</tag>
+				<attr>type=range</attr>
+			</mark>
+			<rules>
+				<inside></inside>
+			</rules>
+			<properties>
+				<prop name="min" type="attr-any" subtype="number"></prop>
+				<prop name="max" type="attr-any" subtype="number"></prop>
+				<prop name="step" type="attr-any" subtype="number"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Switch" reqBody="true" deep="true">
+			<mark>
+				<tag>div</tag>
+				<class>switch</class>
+			</mark>
+			<properties>
+				<prop name="Size" type="class-set">
+					<option value=""></option>
+					<option value="tiny"></option>
+					<option value="small"></option>
+					<option value="large"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Switch"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="SwitchActive" reqBody="true">
+			<mark>
+				<tag>span</tag>
+				<class>switch-active</class>
+			</mark>
+			<rules>
+				<position>Switch:1:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="SwitchInactive" reqBody="true">
+			<mark>
+				<tag>span</tag>
+				<class>switch-inactive</class>
+			</mark>
+			<rules>
+				<position>Switch:1:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		
+		
+		<!-- Navigation -->
+		
+		
+		<!-- brick -->
+		<brick name="Menu">
+			<mark>
+				<tag>ul</tag>
+				<class>menu</class>
+			</mark>
+			<rules>
+				<inside>MenuItem</inside>
+			</rules>
+			<properties>
+				<prop name="medium-horizontal" type="class-set">
+					<option value=""></option>
+					<option value="medium-horizontal"></option>
+				</prop>
+				<prop name="data-responsive-menu" type="attr-any"></prop>
+				<prop name="Align" type="class-set">
+					<option value=""></option>
+					<option value="align-right"></option>
+					<option value="align-left"></option>
+				</prop>
+				<prop name="expanded" type="class-set">
+					<option value=""></option>
+					<option value="expanded"></option>
+				</prop>
+				<prop name="vertical" type="class-set">
+					<option value=""></option>
+					<option value="vertical"></option>
+				</prop>
+				<prop name="simple" type="class-set">
+					<option value=""></option>
+					<option value="simple"></option>
+				</prop>
+				<prop name="nested" type="class-set">
+					<option value=""></option>
+					<option value="nested"></option>
+				</prop>
+				<prop name="icon-top" type="class-set">
+					<option value=""></option>
+					<option value="icon-top"></option>
+				</prop>
+				<prop name="data-accordion-menu" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Navigation" label="" res="Menu"></tool>
+                        <tool section="Navigation" label="vertical" res="Menu_2"></tool>
+                        <tool section="Navigation" label="expanded" res="Menu_3"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="MenuItem">
+			<mark>
+				<tag>li</tag>
+				<pos>Menu:*</pos>
+			</mark>
+			<properties>
+				<prop name="active" type="class-set">
+					<option value=""></option>
+					<option value="active"></option>
+				</prop>
+				<prop name="menu-text" type="class-set">
+					<option value=""></option>
+					<option value="menu-text"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="MenuCentered">
+			<mark>
+				<tag>div</tag>
+				<class>menu-centered</class>
+			</mark>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="DropdownMenu" reqBody="true">
+			<mark>
+				<tag>ul</tag>
+				<class>menu</class>
+				<class>dropdown</class>
+			</mark>
+			<rules>
+				<inside>DropdownMenuItem</inside>
+			</rules>
+			<properties>
+				<prop name="medium-horizontal" type="class-set">
+					<option value=""></option>
+					<option value="medium-horizontal"></option>
+				</prop>
+				<prop name="data-responsive-menu" type="attr-any"></prop>
+				<prop name="vertical" type="class-set">
+					<option value=""></option>
+					<option value="vertical"></option>
+				</prop>
+				<prop name="data-autoclose" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-hover-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-closing-time" type="attr-any"  subtype="number"></prop>
+				<prop name="data-alignment" type="attr-any"></prop>
+				<prop name="data-close-on-click" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-close-on-click-inside" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-vertical-class" type="attr-any"></prop>
+				<prop name="data-right-class" type="attr-any"></prop>
+				<prop name="data-force-follow" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Navigation" label="" res="DropdownMenu"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="DropdownMenuItem">
+			<mark>
+				<tag>li</tag>
+				<pos>DropdownMenu:*</pos>
+			</mark>
+			<properties>
+				<prop name="is-dropdown-submenu-parent" type="class-set">
+					<option value=""></option>
+					<option value="is-dropdown-submenu-parent"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="DrilldownMenu">
+			<mark>
+				<tag>ul</tag>
+				<class>menu</class>
+				<class>vertical</class>
+				<attr>data-drilldown</attr>
+			</mark>
+			<rules>
+				<inside>DropdownMenuItem</inside>
+			</rules>
+			<properties>
+				<prop name="data-back-button" type="attr-any"></prop>
+				<prop name="data-back-button-position" type="attr-any"></prop>
+				<prop name="data-wrapper" type="attr-any"></prop>
+				<prop name="data-parent-link" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-close-on-click" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-auto-height" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-animate-height" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-scroll-top" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-scroll-top-element" type="attr-any"></prop>
+				<prop name="data-scroll-top-offset" type="attr-any" subtype="number"></prop>
+				<prop name="data-animation-duration" type="attr-any" subtype="number"></prop>
+				<prop name="data-animation-easing" type="attr-any"></prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Navigation" label="" res="DrilldownMenu"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="AccordionMenu">
+			<mark>
+				<tag>ul</tag>
+				<class>menu</class>
+				<class>vertical</class>
+				<attr>data-accordion-menu</attr>
+			</mark>
+			<rules>
+				<inside>DropdownMenuItem</inside>
+			</rules>
+			<properties>
+				<prop name="data-slide-speed" type="attr-any" subtype="number"></prop>
+				<prop name="data-multi-open" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Navigation" label="" res="AccordionMenu"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="TopBar">
+			<mark>
+				<tag>div</tag>
+				<class>top-bar</class>
+			</mark>
+			<rules>
+				<inside>TopBarLeft, TopBarRight, TopBarTitle, div</inside>
+			</rules>
+			<properties>
+				<prop name="Stacked" type="class-set">
+					<option value=""></option>
+					<option value="stacked-for-medium"></option>
+					<option value="stacked-for-large"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Navigation" label="" res="TopBar"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TopBarLeft">
+			<mark>
+				<tag>div</tag>
+				<class>top-bar-left</class>
+			</mark>
+			<rules>
+				<position>TopBar:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TopBarRight">
+			<mark>
+				<tag>div</tag>
+				<class>top-bar-right</class>
+			</mark>
+			<rules>
+				<position>TopBar:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TopBarTitle">
+			<mark>
+				<tag>div</tag>
+				<class>top-bar-title</class>
+			</mark>
+			<rules>
+				<position>TopBar:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Magellan">
+			<mark>
+				<tag>ul, nav</tag>
+				<attr>data-magellan=true</attr>
+			</mark>
+			<properties>
+				<prop name="data-animation-duration" type="attr-any" subtype="number"></prop>
+				<prop name="data-animation-easing" type="attr-any"></prop>
+				<prop name="data-threshold" type="attr-any" subtype="number"></prop>
+				<prop name="data-active-class" type="attr-any"></prop>
+				<prop name="data-deep-linking" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-bar-offset" type="attr-any" subtype="number"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Sections">
+			<mark>
+				<tag>div</tag>
+				<class>sections</class>
+			</mark>
+			<rules>
+				<inside>Section</inside>
+			</rules>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Sections"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Section">
+			<mark>
+				<tag>section</tag>
+			</mark>
+			<properties>
+				<prop name="data-magellan-target" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Pagination" reqBody="true">
+			<mark>
+				<tag>ul</tag>
+				<class>pagination</class>
+			</mark>
+			<rules>
+				<inside>PaginationItem</inside>
+			</rules>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Pagination"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="PaginationItem">
+			<mark>
+				<tag>li</tag>
+				<pos>Pagination:*</pos>
+			</mark>
+			<properties>
+				<prop name="Type" type="class-set">
+					<option value=""></option>
+					<option value="pagination-previous"></option>
+					<option value="current"></option>
+					<option value="ellipsis"></option>
+					<option value="pagination-next"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Breadcrumbs">
+			<mark>
+				<tag>ul</tag>
+				<class>breadcrumbs</class>
+			</mark>
+			<rules>
+				<inside>BreadcrumbsItem</inside>
+			</rules>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Breadcrumbs"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="BreadcrumbsItem">
+			<mark>
+				<tag>li</tag>
+				<pos>Breadcrumbs:*</pos>
+			</mark>
+			<properties>
+				<prop name="disabled" type="class-set">
+					<option value=""></option>
+					<option value="disabled"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		
+		<!-- Containers -->
+		
+		
+		<!-- brick -->
+		<brick name="Accordion" reqBody="true">
+			<mark>
+				<class>accordion</class>
+			</mark>
+			<rules>
+				<inside>AccordionItem</inside>
+			</rules>
+			<properties>
+				<prop name="data-multi-expand" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-allow-all-closed" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-slide-speed" type="attr-any" subtype="number"></prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Accordion"></tool>
+                        <tool section="Basic" label="responsive" res="Accordion_2"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="AccordionItem" reqBody="true">
+			<mark>
+				<class>accordion-item</class>
+			</mark>
+			<rules>
+				<position>Accordion:*, AccordionTabs:*</position>
+			</rules>
+			<properties>
+				<prop name="is-active" type="class-set">
+					<option value=""></option>
+					<option value="is-active"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Callout">
+			<mark>
+				<tag>div</tag>
+				<class>callout</class>
+			</mark>
+			<properties>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="primary"></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+				<prop name="Size" type="class-set">
+					<option value=""></option>
+					<option value="small"></option>
+					<option value="large"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Card">
+			<mark>
+				<tag>div</tag>
+				<class>card</class>
+			</mark>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Card"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="CardDivider">
+			<mark>
+				<tag>div</tag>
+				<class>card-divider</class>
+			</mark>
+			<rules>
+				<position>Card:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="CardSection">
+			<mark>
+				<tag>div</tag>
+				<class>card-section</class>
+			</mark>
+			<rules>
+				<position>Card:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Dropdown" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>dropdown-pane</class>
+			</mark>
+			<properties>
+				<prop name="Position" type="class-set">
+					<option value=""></option>
+					<option value="top"></option>
+					<option value="right"></option>
+					<option value="bottom"></option>
+				</prop>
+				<prop name="data-parent-class" type="attr-any"></prop>
+				<prop name="data-hover-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-hover" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-hover-pane" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-v-offset" type="attr-any" subtype="number"></prop>
+				<prop name="data-h-offset" type="attr-any" subtype="number"></prop>
+				<prop name="data-position-class" type="attr-any"></prop>
+				<prop name="data-trap-focus" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-auto-focus" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-close-on-click" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="MediaObject">
+			<mark>
+				<tag>div</tag>
+				<class>media-object</class>
+			</mark>
+			<rules>
+				<inside>MediaObjectSection</inside>
+			</rules>
+			<properties>
+				<prop name="stack-for-small" type="class-set">
+					<option value=""></option>
+					<option value="stack-for-small"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="MediaObject"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="MediaObjectSection">
+			<mark>
+				<tag>div</tag>
+				<class>media-object-section</class>
+			</mark>
+			<rules>
+				<position>MediaObject:*</position>
+			</rules>
+			<properties>
+				<prop name="main-section" type="class-set">
+					<option value=""></option>
+					<option value="main-section"></option>
+				</prop>
+				<prop name="AlignVertical" type="class-set">
+					<option value=""></option>
+					<option value="middle"></option>
+					<option value="bottom"></option>
+					<option value="align-self-center"></option>
+					<option value="align-self-bottom"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="OffCanvas" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>off-canvas</class>
+			</mark>
+			<properties>
+				<prop name="Position" type="class-set">
+					<option value=""></option>
+					<option value="position-left"></option>
+					<option value="position-right"></option>
+					<option value="position-top"></option>
+					<option value="position-bottom"></option>
+				</prop>
+				<prop name="Reveal" type="class-set">
+					<option value=""></option>
+					<option value="reveal-for-medium"></option>
+					<option value="reveal-for-large"></option>
+				</prop>
+				<prop name="data-close-on-click" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-content-overlay" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-content-scroll" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-transition-time" type="attr-any" subtype="number"></prop>
+				<prop name="data-transition" type="attr-any"></prop>
+				<prop name="data-force-to" type="attr-any"></prop>
+				<prop name="data-is-revealed" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-reveal-on" type="attr-any"></prop>
+				<prop name="data-auto-focus" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-reveal-class" type="attr-any"></prop>
+				<prop name="data-trap-focus" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OffCanvasContent" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>off-canvas-content</class>
+			</mark>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OffCanvasWrapper">
+			<mark>
+				<tag>div</tag>
+				<class>off-canvas-wrapper</class>
+			</mark>
+			<rules>
+				<inside>OffCanvas, OffCanvasContent</inside>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="TitleBar">
+			<mark>
+				<tag>div</tag>
+				<class>title-bar</class>
+			</mark>
+			<rules>
+				<inside>TitleBarLeft, TitleBarRight</inside>
+			</rules>
+			<properties>
+				<prop name="data-responsive-toggle" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TitleBarLeft">
+			<mark>
+				<tag>div</tag>
+				<class>title-bar-left</class>
+			</mark>
+			<rules>
+				<position>TitleBar:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TitleBarRight">
+			<mark>
+				<tag>div</tag>
+				<class>title-bar-right</class>
+			</mark>
+			<rules>
+				<position>TitleBar:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TitleBarTitle">
+			<mark>
+				<tag>span</tag>
+				<class>title-bar-title</class>
+			</mark>
+			<rules>
+				<position>TitleBarLeft:*, TitleBarRight:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Reveal" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>reveal</class>
+			</mark>
+			<properties>
+				<prop name="Size" type="class-set">
+					<option value=""></option>
+					<option value="tiny"></option>
+					<option value="small"></option>
+					<option value="large"></option>
+					<option value="full"></option>
+				</prop>
+				<prop name="data-overlay" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="aria-labelledby" type="attr-any">
+				</prop>
+				<prop name="data-animation-in" type="attr-any"></prop>
+				<prop name="data-animation-out" type="attr-any"></prop>
+				<prop name="data-show-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-hide-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-close-on-click" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-close-on-esc" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-multiple-opened" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-v-offset" type="attr-any"></prop>
+				<prop name="data-h-offset" type="attr-any"></prop>
+				<prop name="data-full-screen" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-btm-offset-pct" type="attr-any" subtype="number"></prop>
+				<prop name="data-reset-on-close" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-deep-link" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-append-to" type="attr-any"></prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Reveal"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Table">
+			<mark>
+				<tag>table</tag>
+			</mark>
+			<properties>
+				<prop name="hover" type="class-set">
+					<option value=""></option>
+					<option value="hover"></option>
+				</prop>
+				<prop name="unstriped" type="class-set">
+					<option value=""></option>
+					<option value="unstriped"></option>
+				</prop>
+				<prop name="stack" type="class-set">
+					<option value=""></option>
+					<option value="stack"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Table"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TableScroll">
+			<mark>
+				<tag>div</tag>
+				<class>table-scroll</class>
+			</mark>
+			<rules>
+				<inside>Table</inside>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Tabs" reqBody="true">
+			<mark>
+				<class>tabs</class>
+			</mark>
+			<rules>
+				<inside>TabsTitle</inside>
+			</rules>
+			<properties>
+				<prop name="vertical" type="class-set">
+					<option value=""></option>
+					<option value="vertical"></option>
+				</prop>
+				<prop name="data-active-collapse" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-deep-link" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-deep-link-smudge" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-deep-link-smudge-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-update-history" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-auto-focus" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-wrap-on-keys" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-match-height" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-link-class" type="attr-any"></prop>
+				<prop name="data-link-active-class" type="attr-any"></prop>
+				<prop name="data-panel-class" type="attr-any"></prop>
+				<prop name="data-panel-active-class" type="attr-any"></prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Tabs"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TabsTitle">
+			<mark>
+				<tag>li</tag>
+				<class>tabs-title</class>
+			</mark>
+			<rules>
+				<position>Tabs:*</position>
+			</rules>
+			<properties>
+				<prop name="is-active" type="class-set">
+					<option value=""></option>
+					<option value="is-active"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TabsTitleLink">
+			<mark>
+				<tag>a</tag>
+				<pos>TabsTitle:*</pos>
+			</mark>
+			<properties>
+				<prop name="aria-selected" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TabsContent">
+			<mark>
+				<tag>div</tag>
+				<class>tabs-content</class>
+			</mark>
+			<properties>
+				<prop name="data-tabs-content" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="TabsPanel">
+			<mark>
+				<tag>div</tag>
+				<class>tabs-panel</class>
+			</mark>
+			<rules>
+				<position>TabsContent:*</position>
+			</rules>
+			<properties>
+				<prop name="is-active" type="class-set">
+					<option value=""></option>
+					<option value="is-active"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="AccordionTabs">
+			<mark>
+				<tag>ul</tag>
+				<class>accordion</class>
+			</mark>
+			<rules>
+				<inside>AccordionItem</inside>
+			</rules>
+			<properties>
+				<prop name="data-responsive-accordion-tabs" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="AccordionTitle">
+			<mark>
+				<tag>a</tag>
+				<class>accordion-title</class>
+			</mark>
+			<rules>
+				<position>AccordionItem:*</position>
+			</rules>
+			<properties>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="AccordionContent" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>accordion-content</class>
+			</mark>
+			<rules>
+				<position>AccordionItem:*</position>
+			</rules>
+			<properties>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		
+		<!-- Media -->
+		
+		
+		<!-- brick -->
+		<brick name="Badge">
+			<mark>
+				<class>badge</class>
+			</mark>
+			<properties>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="primary"></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="ResponsiveEmbed">
+			<mark>
+				<tag>div</tag>
+				<class>responsive-embed</class>
+			</mark>
+			<rules>
+				<inside>iframe, object, embed, video</inside>
+			</rules>
+			<properties>
+				<prop name="Aspect" type="class-set">
+					<option value=""></option>
+					<option value="widescreen"></option>
+					<option value="panorama"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="ResponsiveEmbed"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Label">
+			<mark>
+				<class>label</class>
+			</mark>
+			<properties>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="primary"></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+				<prop name="middle" type="class-set">
+					<option value=""></option>
+					<option value="middle"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Orbit" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>orbit</class>
+			</mark>
+			<rules>
+				<inside>OrbitContainer, OrbitBullets</inside>
+			</rules>
+			<properties>
+				<prop name="data-bullets" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-nav-buttons" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-anim-in-from-right" type="attr-any"></prop>
+				<prop name="data-anim-out-to-right" type="attr-any"></prop>
+				<prop name="data-anim-in-from-left" type="attr-any"></prop>
+				<prop name="data-anim-out-to-left" type="attr-any"></prop>
+				<prop name="data-auto-play" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-timer-delay" type="attr-any" subtype="number"></prop>
+				<prop name="data-infinite-wrap" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-swipe" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-pause-on-hover" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-accessible" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+				<prop name="data-container-class" type="attr-any"></prop>
+				<prop name="data-slide-class" type="attr-any"></prop>
+				<prop name="data-box-of-bullets" type="attr-any"></prop>
+				<prop name="data-next-class" type="attr-any"></prop>
+				<prop name="data-prev-class" type="attr-any"></prop>
+				<prop name="data-use-m-u-i" type="attr-set">
+					<option value=""></option>
+					<option value="true"></option>
+					<option value="false"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="Orbit"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitContainer">
+			<mark>
+				<tag>ul</tag>
+				<class>orbit-container</class>
+			</mark>
+			<rules>
+				<position>Orbit:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitPrevious">
+			<mark>
+				<class>orbit-previous</class>
+			</mark>
+			<rules>
+				<position>OrbitContainer:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitNext">
+			<mark>
+				<class>orbit-next</class>
+			</mark>
+			<rules>
+				<position>OrbitContainer:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitBullets">
+			<mark>
+				<tag>nav</tag>
+				<class>orbit-bullets</class>
+			</mark>
+			<rules>
+				<position>Orbit:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitBulletsButton">
+			<mark>
+				<tag>button</tag>
+				<pos>OrbitBullets:*</pos>
+			</mark>
+			<properties>
+				<prop name="is-active" type="class-set">
+					<option value=""></option>
+					<option value="is-active"></option>
+				</prop>
+				<prop name="data-slide" type="attr-any"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitSlide">
+			<mark>
+				<tag>li</tag>
+				<class>orbit-slide</class>
+			</mark>
+			<rules>
+				<position>OrbitContainer:*</position>
+			</rules>
+			<properties>
+				<prop name="is-active" type="class-set">
+					<option value=""></option>
+					<option value="is-active"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitImage">
+			<mark>
+				<tag>img</tag>
+				<class>orbit-image</class>
+			</mark>
+			<rules>
+				<inside></inside>
+				<position>OrbitSlide:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="OrbitCaption">
+			<mark>
+				<tag>figcaption</tag>
+				<class>orbit-caption</class>
+			</mark>
+			<rules>
+				<position>OrbitSlide:*</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="ProgressBar" reqBody="true">
+			<mark>
+				<tag>div</tag>
+				<class>progress</class>
+			</mark>
+			<rules>
+				<inside>ProgressMeter</inside>
+			</rules>
+			<properties>
+				<prop name="aria-valuemin" type="attr-any" subtype="number"></prop>
+				<prop name="aria-valuemax" type="attr-any" subtype="number"></prop>
+				<prop name="aria-valuenow" type="attr-any" subtype="number"></prop>
+				<prop name="aria-valuetext" type="attr-any"></prop>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+			</properties>
+            <editors>
+                <editor name="focean_v1">
+                    <tools>
+                        <tool section="Basic" label="" res="ProgressBar"></tool>
+                    </tools>
+                </editor>
+            </editors>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="ProgressMeter">
+			<mark>
+				<tag>div</tag>
+				<class>progress-meter</class>
+			</mark>
+			<rules>
+				<inside>ProgressMeterText</inside>
+				<position>ProgressBar:0</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="ProgressMeterText">
+			<mark>
+				<tag>p</tag>
+				<class>progress-meter-text</class>
+			</mark>
+			<rules>
+				<position>ProgressMeter:0</position>
+			</rules>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Progress">
+			<mark>
+				<tag>progress</tag>
+			</mark>
+			<rules>
+				<inside></inside>
+			</rules>
+			<properties>
+				<prop name="max" type="attr-any" subtype="number"></prop>
+				<prop name="value" type="attr-any" subtype="number"></prop>
+				<prop name="Color" type="class-set">
+					<option value=""></option>
+					<option value="secondary"></option>
+					<option value="success"></option>
+					<option value="alert"></option>
+					<option value="warning"></option>
+				</prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		<!-- brick -->
+		<brick name="Meter">
+			<mark>
+				<tag>meter</tag>
+			</mark>
+			<rules>
+				<inside></inside>
+			</rules>
+			<properties>
+				<prop name="min" type="attr-any" subtype="number"></prop>
+				<prop name="max" type="attr-any" subtype="number"></prop>
+				<prop name="value" type="attr-any" subtype="number"></prop>
+				<prop name="low" type="attr-any" subtype="number"></prop>
+				<prop name="high" type="attr-any" subtype="number"></prop>
+				<prop name="optimum" type="attr-any" subtype="number"></prop>
+			</properties>
+		</brick>
+		<!-- /brick -->
+		
+		
+		<!-- brick -->
+		<brick name="Thumbnail">
+			<mark>
+				<tag>img, a</tag>
+				<class>thumbnail</class>
+			</mark>
+		</brick>
+		<!-- /brick -->
+        
+        
+        <!-- brick -->
+        <brick name="Img">
+            <mark>
+                <tag>img, imgx</tag>
+            </mark>
+            <rules>
+                <inside></inside>
+            </rules>
+            <properties>
+                <prop name="src" type="attr-any"></prop>
+            </properties>
+            <editors>
+                <editor name="focean_v1">
+                    <properties>
+                        <propinfo for="src" size="" ext="image"></propinfo>
+                    </properties>
+                </editor>
+            </editors>
+        </brick>
+        <!-- /brick -->
+		
+	</set>
+	
+	<common>
+		
+		<properties>
+			<prop name="ShowMedium" type="class-set">
+				<option value=""></option>
+				<option value="show-for-medium"></option>
+				<option value="hide-for-medium"></option>
+			</prop>
+            <prop name="ShowLarge" type="class-set">
+				<option value=""></option>
+				<option value="show-for-large"></option>
+				<option value="hide-for-large"></option>
+			</prop>
+			<prop name="ShowSmallOnly" type="class-set">
+				<option value=""></option>
+				<option value="show-for-small-only"></option>
+				<option value="hide-for-small-only"></option>
+			</prop>
+			<prop name="ShowMediumOnly" type="class-set">
+				<option value=""></option>
+				<option value="show-for-medium-only"></option>
+				<option value="hide-for-medium-only"></option>
+			</prop>
+			<prop name="ShowLargeOnly" type="class-set">
+				<option value=""></option>
+				<option value="show-for-large-only"></option>
+				<option value="hide-for-large-only"></option>
+			</prop>
+			<prop name="hide" type="class-set">
+				<option value=""></option>
+				<option value="hide"></option>
+				<option value="invisible"></option>
+			</prop>
+			<prop name="show-for-landscape" type="class-set">
+				<option value=""></option>
+				<option value="show-for-landscape"></option>
+			</prop>
+			<prop name="show-for-portrait" type="class-set">
+				<option value=""></option>
+				<option value="show-for-portrait"></option>
+			</prop>
+			<prop name="show-for-sr" type="class-set">
+				<option value=""></option>
+				<option value="show-for-sr"></option>
+			</prop>
+			<prop name="aria-hidden" type="attr-set">
+				<option value=""></option>
+				<option value="true"></option>
+				<option value="false"></option>
+			</prop>
+			<prop name="show-on-focus" type="class-set">
+				<option value=""></option>
+				<option value="show-on-focus"></option>
+			</prop>
+			<prop name="Float" type="class-set">
+				<option value=""></option>
+				<option value="float-left"></option>
+				<option value="float-right"></option>
+				<option value="float-center"></option>
+			</prop>
+			<prop name="clearfix" type="class-set">
+				<option value=""></option>
+				<option value="clearfix"></option>
+			</prop>
+			<prop name="stat" type="class-set">
+				<option value=""></option>
+				<option value="stat"></option>
+			</prop>
+			<prop name="Text" type="class-set">
+				<option value=""></option>
+				<option value="text-left"></option>
+				<option value="text-right"></option>
+				<option value="text-center"></option>
+				<option value="text-justify"></option>
+			</prop>
+			<prop name="aria-label" type="attr-any"></prop>
+			<prop name="data-closable" type="attr-set">
+				<option value=""></option>
+				<option value="true"></option>
+				<option value="slide-out-right"></option>
+			</prop>
+			<prop name="data-close" type="attr-set">
+				<option value=""></option>
+				<option value="true"></option>
+				<option value="false"></option>
+			</prop>
+			<prop name="data-tooltip" type="attr-set">
+				<option value=""></option>
+				<option value="true"></option>
+				<option value="false"></option>
+			</prop>
+			<prop name="data-haspopup" type="attr-set">
+				<option value=""></option>
+				<option value="true"></option>
+				<option value="false"></option>
+			</prop>
+			<prop name="data-disable-hover" type="attr-set">
+				<option value=""></option>
+				<option value="false"></option>
+				<option value="true"></option>
+			</prop>
+			<prop name="top" type="class-set">
+				<option value=""></option>
+				<option value="top"></option>
+			</prop>
+			<prop name="data-click-open" type="attr-set">
+				<option value=""></option>
+				<option value="false"></option>
+				<option value="true"></option>
+			</prop>
+			<prop name="CommonAlign" type="class-set">
+				<option value=""></option>
+				<option value="left"></option>
+				<option value="right"></option>
+			</prop>
+			<prop name="aria-describedby" type="attr-any"></prop>
+			<prop name="data-open" type="attr-any"></prop>
+			<prop name="data-toggle" type="attr-any"></prop>
+			<prop name="data-hide-for" type="attr-any"></prop>
+			<prop name="data-animate" type="attr-any"></prop>
+		</properties>
+		
+	</common>
+	
+</ibricks>

@@ -1,0 +1,1194 @@
+<ibricks lib="semantec-2.2.10" ver="1.2" baseLib="html-5" ibricks_ver="2">
+	<set format="fdl">
+        
+		Define Button
+		
+        as ui
+		as button
+		as tag button, div
+		$ primary, secondary as Type
+        $ positive, negative as Positive
+		$ animated
+		$ vertical
+		$ fade
+		$ labeled
+		$ icon
+		$ left, right
+		$ basic
+		$ inverted
+		$ active
+		$ disabled
+		$ loading
+		$ facebook, twitter, google, vk, linked, instagram, youtube as Social
+		$ mini, tiny, small, medium, large, big, huge, massive as Size
+		$ red, orange, yellow, olive, green, teal, blue, purple, violet, pink, brown, grey, black as Color
+		$ floated
+		$ compact
+		$ toggle
+		$ circular
+		$ fluid
+		$ top, bottom as AlignVertical
+		$ attached
+		$ attr a number
+		label disabled kkk
+		propinfo disabled _null next
+		propinfopar disabled disabled knot
+		
+		Define Buttons
+		
+        as ui
+		as buttons
+		as tag div
+		$ icon
+		$ vertical
+		$ top, bottom as AlignVertical
+		$ attached
+		$ labeled
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ basic
+		$ mini, tiny, small, medium, large, big, huge, massive as Size
+		$ red, orange, yellow, olive, green, teal, blue, purple, violet, pink, brown, grey, black as Color
+		inside Button, div
+		
+		
+		Define Container
+		
+        as ui
+		as container
+		as tag div
+		$ text
+		$ left, center, right, justified as Align
+		$ aligned
+		$ fluid
+		
+		
+		Define Divider
+		
+        as ui
+		as divider
+		as tag div, h1, h2, h3, h4, h5
+		$ vertical, horizontal as Type
+		$ inverted
+		$ fitted
+		$ hidden
+		$ section
+		$ clearing
+		$ header
+		
+		
+		Define Flag
+        as ui
+		as flag
+		as tag i
+		
+		
+		Define Header
+		
+        as ui
+		as header
+		as tag h1, h2, h3, h4, h5, div
+		$ huge, large, medium, small, tiny as Size
+		$ icon
+		$ sub
+		$ disabled
+		$ dividing
+		$ block
+		$ attached
+		$ top, bottom as AlignVertical
+		$ left, right, center, justified as Align
+		$ floated
+		$ aligned
+		$ red, orange, yellow, olive, green, teal, blue, purple, violet, pink, brown, grey as Color
+		$ inverted
+		
+		
+		Define Icon
+        as ui
+		as icon
+		as tag i
+		$ disabled
+		$ loading
+		$ fitted
+		$ mini, tiny, small, large, big, huge, massive as Size
+		$ link
+		$ flipped
+		$ vertically, horizontally as Alignement
+		$ clockwise, counterclockwise as Wise
+		$ rotated
+		$ circular
+		$ inverted
+		$ bordered
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		$ corner
+		$ divider
+		
+		Define Icons
+        as ui
+		as icons
+		as tag i
+		$ mini, tiny, small, large, big, huge, massive as Size
+		inside Icon
+		
+		
+        Define Img
+        
+        as ui
+        as tag img
+        $ attr src
+        propinfo src _null image
+        
+        
+		Define Image
+		
+        as ui
+		as image
+		as tag img, div, a
+		$ hidden
+		$ disabled
+		$ avatar
+		$ bordered
+		$ fluid
+		$ rounded
+		$ circular
+		$ top, middle, bottom as VerticalAlign
+		$ aligned
+		$ centered
+		$ spaced
+		$ floated
+		$ mini, tiny, small, medium, large, big, huge, massive as Size
+		$ right, left as Align
+		inside Image
+		
+		Define Images
+		
+        as ui
+		as images
+		as tag div
+		$ mini, tiny, small, medium, large, big, huge, massive as Size
+		inside Image
+		
+		
+		Define Input
+		
+        as ui
+		as input
+		as tag div
+		$ focus
+		$ loading
+		$ left, right
+		$ icon
+		$ disabled
+		$ error
+		$ labeled
+		$ corner
+		$ action
+		$ transparent
+		$ inverted
+		$ fluid
+		$ mini, small, large, big, huge, massive as Size
+		inside input, Icon, Label, Dropdown
+		
+		
+		Define Label
+		
+        as ui
+		as label
+		as tag div, a
+		$ image
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		$ pointing
+		$ left, right, below as Position
+		$ corner
+		$ tag
+		$ ribbon
+		$ attached
+		$ top, bottom as VerticalAlign
+		$ horizontal
+		$ floating
+		$ circular
+		$ empty
+		$ basic
+		$ mini, tiny, small, large, big, huge, massive as Size
+		inside Icon, Image, LabelDetail
+		
+		Define LabelDetail
+        as ui
+		as detail
+		as tag div
+		at pos Label:*
+		
+		Define Labels
+		
+        as ui
+		as labels
+		as tag div
+		$ mini, tiny, small, large, big, huge, massive as Size
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		$ tag
+		$ circular
+		inside Label
+		
+		
+		Define List
+		
+        as ui
+		as list
+		as tag div, ul, ol
+		$ relaxed
+		$ divided
+		$ bulleted
+		$ ordered
+		$ link
+		$ horizontal
+		$ inverted
+		$ middle
+		$ aligned
+		$ selection
+		$ animated
+		$ very
+		$ celled
+		$ mini, tiny, small, large, big, huge, massive as Size
+		$ right
+		$ floated
+		inside ListItem
+		
+		Define ListItem
+        as ui
+		as item
+		as tag div, a
+		as pos List:*
+		
+		Define ListItemHeader
+        as ui
+		as header
+		as tag a, div
+		as pos ListItem:*,ListItemContent:*
+		
+		Define ListItemDescription
+        as ui
+		as description
+		as tag div
+		as pos ListItem:*,ListItemContent:*
+		
+		Define ListItemContent
+        as ui
+		as content
+		as tag div
+		$ top, middle, bottom as VerticalAlign
+		$ aligned
+		$ right
+		$ floated
+		as pos ListItem:*
+		
+		
+		Define Loader
+		
+        as ui
+		as loader
+		as tag div
+		$ text
+		$ indeterminate
+		$ active
+		$ disabled
+		$ inline
+		$ centered
+		$ mini, tiny, small, medium, large, big, huge, massive as Size
+		$ inverted
+		
+		
+		Define Rail
+		
+        as ui
+		as rail
+		$ left, right as Align
+		$ internal
+		$ dividing
+		$ attached
+		$ close
+		$ very
+		$ mini, tiny, small, large, big, huge, massive as Size
+		inside Segment
+		
+		
+		Define Reveal
+		
+        as ui
+		as reveal
+		as tag div
+		$ fade
+		$ move
+		$ left, right as Align
+		$ up, down as Direction
+		$ rotate
+		$ circular
+		$ active
+		$ instant
+		$ disabled
+		$ image
+		$ small
+		inside RevealContent, Image
+		
+		Define RevealContent
+        as ui
+		as content
+		as tag div, img
+		as pos Reveal:*
+		$ hidden, visible as Visibility
+		inside Image
+		
+		
+		Define Segment
+		
+        as ui
+		as segment
+		as tag div
+		$ raised
+		$ stacked
+		$ tall
+		$ piled
+		$ vertical
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		$ secondary, tertiary as Type
+		$ disabled
+		$ loading
+		$ inverted
+		$ attached
+		$ top, bottom
+		$ padding
+		$ very
+		$ padded
+		$ compact
+		$ circular
+		$ clearing
+		$ floated
+		$ left, right, center as Align
+		$ aligned
+		$ basic
+		
+		Define Segments
+		
+        as ui
+		as segments
+		as tag div
+		inside Segment, SegmentGroup
+		$ horizontal
+		$ raised
+		$ stacked
+		$ piled
+		$ compact
+		inside Segment, Segments
+		
+		
+		Define Step
+        as ui
+		as step
+		as tag div, a
+		$ active
+		$ completed
+		$ disabled
+		$ link
+		
+		Define StepTitle
+        as ui
+		as title
+		as tag div
+		at pos Step:*,StepContent:*
+		
+		Define StepDescription
+        as ui
+		as description
+		as tag div
+		at pos Step:*,StepContent:*
+		
+		Define StepContent
+        as ui
+		as content
+		as tag div
+		at pos Step:*
+		
+		Define Steps
+		
+        as ui
+		as steps
+		as tag div
+		$ ordered
+		$ vertical
+		$ stackable
+		$ tablet
+		$ fluid
+		$ attached
+		$ top, bottom as VerticalAlign
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ mini, tiny, small, large, big, huge, massive as Size
+		inside Step
+		
+		
+		/
+		
+		
+		Define Breadcrumb
+		
+        as ui
+		as breadcrumb
+		as tag div
+		$ mini, tiny, small, large, big, huge, massive as Size
+		tool basic _null _null _null true Breadcrumb _null
+        
+		Define BreadcrumbSection
+        as ui
+		as section
+		as tag div, a
+		$ active
+		at pos Breadcrumb:*
+		
+		
+		Define Form
+		
+        as ui
+		as form
+		as tag form, div
+		$ loading
+		$ success, error, warning as Type
+		$ mini, tiny, small, large, big, huge, massive as Size
+		$ equal
+		$ width
+		$ inverted
+		tool Form _null _null _null true Form _null
+        
+		Define FormField
+		
+        as ui
+		as field
+		as tag div
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ wide
+		$ error
+		$ inline
+		$ disabled
+		$ required
+		
+		Define FormFields
+		
+        as ui
+		as fields
+		as tag div
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ inline
+		$ grouped
+		$ equal
+		$ width
+		
+		
+		Define Grid
+		
+        as ui
+		as grid
+		as tag div
+		$ relaxed
+		$ column
+		$ internally
+		$ celled
+		$ equal
+		$ width
+		$ center
+		$ aligned
+		$ padded
+		$ centered
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ container
+		$ stackable
+		$ mobile
+		$ reversed
+		$ divided
+		$ vertically, horizontally as Alignement
+		$ very
+		inside Column, Row
+        tool Grid _null _null _null true Grid _null
+		
+		Define Column
+        as ui
+		as column
+		as tag div
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ wide
+		$ left, right
+		$ floated
+		$ aligned
+		$ red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, grey, black as Color
+		$ computer, tablet, mobile as Responsive
+		$ only
+		at pos Grid:*, Row:*
+		
+		Define Row
+        as ui
+		as row
+		as tag div
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteenas Number
+		$ column
+		$ center
+		$ aligned
+		$ doubling
+		$ computer
+		$ only
+		$ stretched
+		inside Column
+		at pos Grid:*
+		
+		
+		Define Menu
+		
+        as ui
+		as menu
+		as tag div
+		$ item, text
+		$ top, bottom as VerticalAlign
+		$ attached
+		$ right, left
+		$ secondary
+		$ pointing
+		$ tabular
+		$ vertical
+		$ pagination
+		$ compact
+		$ fixed
+		$ stackable
+		$ inverted
+		$ red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, grey as Color
+		$ icon
+		$ labeled
+		$ fluid
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ mini, tiny, small, large, huge, massive as Size
+		$ borderless
+        tool Navigation _null _null _null true Menu _null
+		tool Navigation tabular _null _null true Menu_2 _null
+        
+		Define MenuItem
+        as ui
+		as item
+		as tag div
+		$ active
+		$ header
+		$ dropdown, link as Type
+		$ category
+		$ search
+		$ down
+		$ fitted
+		$ right
+		$ horizontally, vertically as Alignement
+		$ red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, grey as Color
+		
+		Define MenuItemLink
+        as ui
+		as item
+		as tag a
+		$ active
+		$ header
+		$ browse
+		$ red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, grey as Color
+		
+		
+		Define Message
+		
+        as ui
+		as message
+		as tag div
+		$ icon
+		$ hidden, visible
+		$ floating
+		$ compact
+		$ attached
+		$ warning, info, success, error as Type
+        $ positive, negative as Positive
+		$ red, orange, yellow, olive, green, teal, blue, violet, purple, pink, brown, black as Color
+		$ mini, tiny, small, large, big, huge, massive as Size
+		tool basic _null _null _null true Message _null
+        
+		Define MessageContent
+        as ui
+		as content
+		as tag div
+		as pos Message:*
+		
+		
+		Define Table
+		
+        as ui
+		as table
+		as tag table
+		$ celled
+		$ padded
+		$ very
+		$ basic
+		$ collapsing
+		$ striped
+		$ definition
+		$ compact
+		$ structured
+		$ single
+		$ line
+		$ fixed
+		$ unstackable, stackable as Stackable
+		$ selectable
+		$ inverted
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ column
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		$ sortable
+		$ small, large as Size
+		inside Tr, tbody, Thead, Tfoot
+		tool basic _null _null _null true Table _null
+        
+		Define Tr
+        as ui
+		as tag tr
+		$ warning, error as Type
+		$ active
+		$ disabled
+		$ top, bottom as VerticalAlign
+		$ center
+		$ aligned
+		$ positive, negative as Positive
+		inside Tdth
+		at pos Table:*, Thead:*, Tfoot:*, tbody:*
+		
+		Define Tdth
+        as ui
+		as tag td, th
+		$ warning, error as Type
+		$ active
+		$ disabled
+		$ right
+		$ aligned
+		$ selectable
+		$ top, bottom as VerticalAlign
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ wide
+		$ collapsing
+		$ positive, negative as Positive
+		at pos Tr:*
+		
+		Define Thead
+        as ui
+		as tag thead
+		$ full-width
+		at pos Table:*
+		inside Tr
+		
+		Define Tfoot
+        as ui
+		as tag tfoot
+		$ full-width
+		at pos Table:*
+		inside Tr
+		
+		/
+		
+		
+		Define Ad
+		
+        as ui
+		as ad
+		as tag div
+		$ rectangle, leaderboard, banner, page, button, skyscraper, billboard, panorama, netboard as Type
+		$ medium, large, small, half as Size
+		$ test
+		$ mobile
+		$ vertical
+		$ square
+		$ wide
+		$ top
+		$ centered
+		
+		
+		Define Card
+		
+        as ui
+		as card
+		as tag div, a
+		$ fluid
+		$ centered
+		$ raised
+		$ link
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		tool basic _null _null _null true Card _null
+        
+		Define CardContent
+        as ui
+		as content
+		as tag div
+		as pos Card:*
+		$ extra
+		
+		Define CardContentHeader
+        as ui
+		as header
+		as tag div, a
+		as pos CardContent:*
+		
+		Define CardContentMeta
+        as ui
+		as meta
+		as tag div
+		as pos CardContent:*
+		
+		Define CardContentMetaDate
+        as ui
+		as date
+		as tag span
+		at pos CardContentMeta:*
+		
+		Define CardContentDescription
+        as ui
+		as description
+		as tag div
+		as pos CardContent:*
+		
+		Define Cards
+		
+        as ui
+		as cards
+		as tag div
+		$ link
+		$ special
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		$ stackable
+		$ doubling
+		inside Card
+		
+		
+		Define Comments
+		
+        as ui
+		as comments
+		as tag div
+		$ collapsed
+		$ threaded
+		$ minimal
+		
+		Define Comment
+        as ui
+		as comment
+		as tag div
+		at pos Comments:*
+        tool basic _null _null _null true Comment _null
+		
+		Define CommentAvatar
+        as ui
+		as avatar
+		as tag div
+		at pos Comment:*
+		
+		Define CommentContent
+        as ui
+		as content
+		as tag div
+		as pos Comment:*
+		
+		Define CommentContentMetadata
+        as ui
+		as metadata
+		as tag div
+		at pos CommentContent:*
+		
+		Define CommentContentText
+        as ui
+		as text
+		as tag div
+		at pos CommentContent:*
+		
+		Define CommentContentActions
+        as ui
+		as actions
+		as tag div
+		as pos CommentContent:*
+		
+		Define CommentContentAuthor
+        as ui
+		as author
+		as tag div
+		at pos Comment:*
+		
+		
+		Define Feed
+		
+        as ui
+		as feed
+		as tag div
+		$ small, large as Size
+		inside FeedEvent
+		tool basic _null _null _null true Feed _null
+        
+		Define FeedEvent
+        as ui
+		as event
+		as tag div
+		at pos Feed:*
+		inside FeedLabel, FeedContent
+		
+		Define FeedLabel
+        as ui
+		as label
+		as tag div
+		as pos FeedEvent:*
+		
+		Define FeedContent
+        as ui
+		as content
+		as tag div
+		as pos FeedEvent:*
+		
+		Define FeedContentDate
+        as ui
+		as date
+		as tag div
+		as pos FeedContent:*
+		
+		Define FeedContentSummary
+        as ui
+		as summary
+		as tag div
+		at pos FeedContent:*
+		
+		Define FeedContentSummaryDate
+        as ui
+		as date
+		as tag div
+		at pos FeedContentSummary:*
+		
+		Define FeedContentExtra
+        as ui
+		as extra
+		as tag div
+		$ text, images as Type
+		as pos FeedContent:*
+		
+		
+		Define Items
+		
+        as ui
+		as items
+		as tag div
+		$ divided
+		$ relaxed
+		$ very
+		$ link
+		inside Item
+		
+		Define Item
+        as ui
+		as item
+		as tag div
+		as pos Items:*
+		tool basic _null _null _null true Item _null
+        
+		Define ItemContent
+        as ui
+		as content
+		as tag div
+		$ middle, bottom as VerticalAlign
+		$ aligned
+		as pos Item:*
+		
+		Define ItemHeader
+        as ui
+		as header
+		as tag div
+		as pos Item:*, ItemContent:*
+		
+		Define ItemMeta
+        as ui
+		as meta
+		as tag div
+		at pos Item:*, ItemContent:*
+		
+		Define ItemDescription
+        as ui
+		as description
+		as tag div
+		as pos Item:*, ItemContent:*
+		
+		Define ItemExtra
+        as ui
+		as extra
+		as tag div
+		as pos Item:*, ItemContent:*
+		
+		
+		Define Statistic
+		
+        as ui
+		as statistic
+		as tag div
+		$ horizontal
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey as Color
+		$ inverted
+		$ right
+		$ floated
+		$ mini, tiny, small, large, huge as Size
+		inside StatisticValue, StatisticLabel
+		tool basic _null _null _null true Statistic _null
+        
+		Define StatisticValue
+		
+        as ui
+		as value
+		$ text
+		at pos Statistic:*
+		
+		Define StatisticLabel
+		
+        as ui
+		as label
+		at pos Statistic:*
+		
+		Define Statistics
+		
+        as ui
+		as statistics
+		as tag div
+		$ horizontal
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey as Color
+		$ inverted
+		$ two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen as Number
+		inside Statistic
+		
+		
+		/
+		
+		
+		Define Accordion
+		
+        as ui
+		as accordion
+		as tag div
+		$ styled
+		$ fluid
+		$ inverted
+		inside AccordionTitle, AccordionContent
+		tool basic _null _null _null true Accordion _null
+        
+		Define AccordionTitle
+        as ui
+		as title
+		as tag div
+		as pos Accordion:*
+		$ active
+		
+		Define AccordionContent
+        as ui
+		as content
+		as tag div
+		as pos Accordion:*
+		$ active
+		
+		
+		Define Checkbox
+		
+        as ui
+		as checkbox
+		as tag div
+		$ radio
+		$ slider, toggle as Type
+		$ checked
+		$ read-only
+		$ disabled
+		$ fitted
+		tool Form _null _null _null true Checkbox _null
+        
+		
+		Define Dimmer
+		
+        as ui
+		as dimmer
+		as tag div
+		$ page
+		$ active
+		$ disabled
+		$ simple
+		$ inverted
+		
+		
+		Define Dropdown
+		
+        as ui
+		as dropdown
+		as tag div, select
+		$ selection
+		$ fluid
+		$ search
+		$ multiple
+		$ floating
+		$ icon
+		$ button
+		$ labeled
+		$ inline
+		$ pointing
+		$ link
+		$ item
+		$ left, right as Align
+		$ top, bottom as VerticalAlign
+		$ simple
+		$ loading
+		$ error
+		$ active
+		$ disabled
+		$ scrolling
+		$ compact
+		inside Header, Divider, Icon, Menu
+		tool Navigation _null _null _null true Dropdown _null
+        
+		
+		Define Embed
+		
+        as ui
+		as embed
+		as tag div
+		$ attr data-source youtube, vimeo
+		$ 4:3
+		$ attr data-id
+		$ attr data-placeholder
+		$ attr data-icon
+		
+		
+		Define Modal
+		
+        as ui
+		as modal
+		as tag div
+		$ basic
+		$ active
+		tool basic _null _null _null true Modal _null
+        
+		Define ModalContent
+        as ui
+		as content
+		as tag div
+		$ image
+		as pos Modal:*
+		
+		Define ModalActions
+        as ui
+		as actions
+		as tag div
+		at pos Modal:*
+		
+		
+		Define Progress
+		
+        as ui
+		as progress
+		as tag div
+		$ indicating
+		$ active
+		$ success, warning, error, disabled as Type
+		$ inverted
+		$ top, bottom as VerticalAlign
+		$ attached
+		$ tiny, small, large, big as Size
+		$ blue, teal, yellow, red, orange, olive, green, violet, purple, pink, brown, grey, black as Color
+		inside Label, Bar
+		tool basic _null _null _null true Progress _null
+        
+		Define Bar
+        as ui
+		as bar
+		as tag div
+		at pos Progress:*
+		
+		
+		Define Rating
+		
+        as ui
+		as rating
+		as tag div
+		$ attr data-max-rating number
+		$ star, heart
+		$ attr data-rating number
+		$ mini, tiny, small, large, huge, massive as Size
+		
+		
+		Define Search
+		
+        as ui
+		as search
+		as tag div
+		$ category
+		$ loading
+		$ fluid
+		$ aligned
+		tool basic _null _null _null true Search _null
+        
+		Define SearchResults
+        as ui
+		as results
+		as tag div
+		at pos Search:*
+		
+		
+		Define Shape
+		
+        as ui
+		as shape
+		as tag div
+		$ cube, people, text as Type
+		inside ShapeSides
+		tool basic _null _null _null true Shape _null
+        
+		Define ShapeSides
+        as ui
+		as sides
+		as tag div
+		$ cube, people, text as Type
+		at pos Shape:*
+		inside ShapeSide
+		
+		Define ShapeSide
+        as ui
+		as side
+		as tag div
+		$ active
+		at pos ShapeSides:*
+		
+		
+		Define Sidebar
+        as ui
+		as menu
+        as sidebar
+		as tag div
+		$ visible
+		$ dimmed
+		$ pusher
+		$ top, bottom, right, left as VerticalAlign
+		$ thin, wide as Type
+		$ very
+		tool basic _null _null _null true Sidebar _null
+        
+		
+		Define Sticky
+		
+        as ui
+		as sticky
+		as tag div
+		tool basic _null _null _null true Sticky _null
+        
+		
+		Define Tab
+        as ui
+		as segment
+		
+		as tab
+		as tag div
+		$ active
+		$ loading
+		
+	</set>
+	
+	<common>
+		
+		<properties>
+		</properties>
+		
+	</common>
+	
+</ibricks>

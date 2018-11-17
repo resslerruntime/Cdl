@@ -1,0 +1,352 @@
+// body
+
+%tool_ButtonLink_body!
+<a class="btn" role="button">Link</a>
+!tool_ButtonLink_body%
+
+%tool_ProgressBar_body!
+<div class="progress-bar" role="progressbar"></div>
+!tool_ProgressBar_body%
+
+%tool_DropdownButton_body!
+<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
+!tool_DropdownButton_body%
+
+%tool_DropdownMenuDivider_body!
+<li class="divider" role="separator"></li>
+!tool_DropdownMenuDivider_body%
+
+%tool_ButtonGroup_body!
+<div class="btn-group" role="group"></div>
+!tool_ButtonGroup_body%
+
+%tool_ButtonToolbar_body!
+<div class="btn-toolbar" role="toolbar"></div>
+!tool_ButtonToolbar_body%
+
+%tool_NavItem_body!
+<li class="active" role="presentation"></li>
+!tool_NavItem_body%
+
+%tool_NavItemDropdown_body!
+<li class="dropdown" role="presentation"></li>
+!tool_NavItemDropdown_body%
+
+
+// tools
+
+%tool_List!
+<ul class="list-unstyled" data-mbcode_id="%mbcode_id%">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+        <ul>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+</ul>
+!tool_List%
+
+%tool_List_2!
+<ul class="list-inline" data-mbcode_id="%mbcode_id%">
+    <li class="list-inline-item">Lorem ipsum</li>
+    <li class="list-inline-item">Phasellus iaculis</li>
+    <li class="list-inline-item">Nulla volutpat</li>
+</ul>
+!tool_List_2%
+
+%tool_Table!
+<table class="table" data-mbcode_id="%mbcode_id%">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+    </tbody>
+</table>
+!tool_Table%
+
+%tool_Figure!
+<figure class="figure" data-mbcode_id="%mbcode_id%">
+    <img src=".../400x300" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+</figure>
+!tool_Figure%
+
+%tool_Alert!
+<div class="alert alert-success" role="alert" data-mbcode_id="%mbcode_id%">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+!tool_Alert%
+
+%tool_Breadcrumb!
+<nav aria-label="breadcrumb" data-mbcode_id="%mbcode_id%">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+</nav>
+!tool_Breadcrumb%
+
+%tool_ButtonGroupToggle!
+<div class="btn-group-toggle" data-toggle="buttons" data-mbcode_id="%mbcode_id%">
+    <label class="btn btn-secondary active">
+        <input type="checkbox" checked autocomplete="off" /> Checked
+    </label>
+</div>
+!tool_ButtonGroupToggle%
+
+%tool_ButtonGroup!
+<div class="btn-group" role="group" aria-label="Basic example" data-mbcode_id="%mbcode_id%">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+!tool_ButtonGroup%
+
+%tool_Card!
+<div class="card" style="width: 18rem;" data-mbcode_id="%mbcode_id%">
+    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+</div>
+!tool_Card%
+
+%tool_Carousel!
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-mbcode_id="%mbcode_id%">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide" />
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide" />
+        </div>
+    </div>
+</div>
+!tool_Carousel%
+
+%tool_Dropdown!
+<div class="dropdown" data-mbcode_id="%mbcode_id%">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+!tool_Dropdown%
+
+%tool_Form!
+<form data-mbcode_id="%mbcode_id%">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+!tool_Form%
+
+%tool_InputGroup!
+<div class="input-group mb-3" data-mbcode_id="%mbcode_id%">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+!tool_InputGroup%
+
+%tool_InputGroup_2!
+<div class="input-group mb-3" data-mbcode_id="%mbcode_id%">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+</div>
+!tool_InputGroup_2%
+
+%tool_InputGroup_3!
+<div class="input-group mb-3" data-mbcode_id="%mbcode_id%">
+    <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
+</div>
+!tool_InputGroup_3%
+
+%tool_InputGroup_4!
+<div class="input-group" data-mbcode_id="%mbcode_id%">
+    <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+!tool_InputGroup_4%
+
+%tool_Jumbotron!
+<div class="jumbotron" data-mbcode_id="%mbcode_id%">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+!tool_Jumbotron%
+
+%tool_ListGroup!
+<ul class="list-group" data-mbcode_id="%mbcode_id%">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+!tool_ListGroup%
+
+%tool_Modal!
+<div class="modal" tabindex="-1" role="dialog" data-mbcode_id="%mbcode_id%">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+!tool_Modal%
+
+%tool_Nav!
+<ul class="nav" data-mbcode_id="%mbcode_id%">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
+!tool_Nav%
+
+%tool_Navbar!
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-mbcode_id="%mbcode_id%">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+    </div>
+</nav>
+!tool_Navbar%
+
+%tool_Pagination!
+<nav aria-label="Page navigation example" data-mbcode_id="%mbcode_id%">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>
+!tool_Pagination%
+
+%tool_Progress!
+<div class="progress" data-mbcode_id="%mbcode_id%">
+    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+!tool_Progress%
+
