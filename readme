@@ -27,6 +27,6 @@ In this case Cdl will define myComplexType:0 brick with pos and positions set to
 What about the type of inside empty elements? Normally all empty elements (slots) have the inside rule from the main brick. You can set also to read only or own - inherited from recognized brick like span in our example. 
 To do different define only a brick at certain position name:1:0. If Cdl will find already defined element, will not analyze this brick even if exist in body content.
 
-To tell set reqbody=true and define brick body in file.
+To analyze body set reqbody=true and define brick body in a separate file.
 
 You can also use reqbody to set static properties, not defined manually.
